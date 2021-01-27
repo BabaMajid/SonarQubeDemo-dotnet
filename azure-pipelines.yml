@@ -22,15 +22,10 @@ steps:
     restoreSolution: '$(solution)'
 - task: SonarQubePrepare@4
   inputs:
-    SonarQube: 'SonarQube2'
+    SonarQube: 'SonarQube'
     scannerMode: 'MSBuild'
     projectKey: 'test'
     projectName: 'test'
-    extraProperties: |
-      # Additional properties that will be passed to the scanner, 
-      # Put one key=value per line, example:
-      # sonar.exclusions=**/*.bin
-      sonar.host.url=http://sonarqube.systemsltd.com
 - task: VSBuild@1
   inputs:
     solution: '$(solution)'
