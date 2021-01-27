@@ -24,8 +24,8 @@ steps:
   inputs:
     SonarQube: 'Sonar'
     scannerMode: 'MSBuild'
-    projectKey: 'Hello'
-    projectName: 'Hello'
+    projectKey: 'OWASP'
+    projectName: 'OWASP'
 - task: VSBuild@1
   inputs:
     solution: '$(solution)'
