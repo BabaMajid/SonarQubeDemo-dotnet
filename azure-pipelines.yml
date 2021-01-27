@@ -22,7 +22,7 @@ steps:
     restoreSolution: '$(solution)'
 - task: SonarQubePrepare@4
   inputs:
-    SonarQube: 'SonarQube'
+    SonarQube: 'Sonar'
     scannerMode: 'MSBuild'
     projectKey: 'test'
     projectName: 'test'
